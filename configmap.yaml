@@ -1,0 +1,7 @@
+apiVersion: v1
+data:
+  authorized_keys: |
+    ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAID9Zt/CR+kt1omLPJmMLCJu1w3aIpg7IO0Vv7up+MVFI jp@hex
+kind: ConfigMap
+metadata:
+  name: shpod
