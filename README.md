@@ -2,7 +2,7 @@
 
 ## Summary
 
-A demo of a k3s cluster running pods accessible via ssh and with distinct IPs or names
+A demo of a k3s cluster running pods accessible via ssh and with distinct IPs or names. This code is derived from an [example](https://gist.github.com/jpetazzo/63ad363937ce5b7d48ed4af8e06fe38b) provided by [Jérôme Petazzoni](https://jpetazzo.github.io/). 
 
 ## Basic Setup of k3s
 
