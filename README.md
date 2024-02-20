@@ -82,11 +82,15 @@ sudo kubectl port-forward --address 0.0.0.0 service/shpod 2222:22
 
 ## Use a dedicated IP address
 
-Since [`service.yaml`](config/service.yaml) contains `type: LoadBalancer` the pod obtains an external IP address. You can obtain it via  
+[Former versions of `service.yaml`](https://github.com/daixtrose/k3s-ssh-service-demo/commit/fc1bfdf884cff647f7cc0c2438a7746ba1b90e45) contained `type: LoadBalancer` for the pod to obtain an external IP address. 
+
+This was later changed to use `externalIPs` directly. You can query the IP via  
 
 ```bash
 sudo kubectl describe services shpod
 ```
+
+## Starting and Stopping the Service
 
 While doing changes or experiments to the service configuration, you can turn off and on the service using the following commands:
 

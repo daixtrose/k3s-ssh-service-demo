@@ -3,7 +3,6 @@ kind: Service
 metadata:
   name: shpod
 spec:
-  externalTrafficPolicy: Cluster
   ports:
   - name: ssh
     port: 22
@@ -11,4 +10,5 @@ spec:
     targetPort: 22
   selector:
     app: shpod
-  type: LoadBalancer 
+  externalIPs:
+    - 192.168.178.111
