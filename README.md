@@ -83,8 +83,7 @@ sudo kubectl port-forward --address 0.0.0.0 service/shpod 2222:22
 ## Use a dedicated IP address
 
 [Former versions of `service.yaml`](https://github.com/daixtrose/k3s-ssh-service-demo/commit/fc1bfdf884cff647f7cc0c2438a7746ba1b90e45) contained `type: LoadBalancer` for the pod to obtain an external IP address. 
-
-This was later changed to use `externalIPs` directly. You can query the IP via  
+This was later changed to using `externalIPs` directly. You can query the IP via  
 
 ```bash
 sudo kubectl describe services shpod
